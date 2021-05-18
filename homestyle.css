@@ -1,0 +1,125 @@
+*:focus {
+  animation: pulsefocus 4s infinite alternate;
+}
+
+body {
+    background: #fff;
+    margin: 0;
+    font-size: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+  display: flex;
+}
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    clip: rect(0 0 0 0);
+}
+
+  .title {
+    font-size: 6vw;
+    margin-top: 3rem;
+    display: flex;
+    font-family: 'Lobster', cursive;
+    width: 100%;
+  }
+  
+.links {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.bubble__link {
+    background: linear-gradient(0deg, rgba(10, 26, 247, 0.9) 0%, rgba(73, 9, 110, 0.9) 100%);
+    box-shadow: 0 0 0 0 rgba(142, 17, 158);
+    border: 2px solid rgb(255, 255, 255);
+    filter: blur(4px);
+    border-radius: 5rem;
+    height: 3rem;
+    width: 3rem;
+    color: transparent;
+}
+
+.bubble__link:hover {
+   animation: linkgo .5s both, pulse 2s infinite cubic-bezier(.66, 0, 0, 1);
+}
+
+  .wrapper {
+    animation: scroll 300s linear infinite;
+    background: url("./spaceblue.jpg"), #111111 center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #eee;
+    height: 100%;
+    min-width: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    
+  }
+
+  @keyframes pulsefocus {
+    0% {
+      filter: blur(0);
+      transform: scale(1) rotate(0);
+    }
+     100% {
+      filter: blur(0);
+      transform: scale(1.4) rotate(360deg);
+    }
+  }
+
+  @keyframes pulse {
+    100% {
+      box-shadow: 0 0 0 6rem rgba(255, 71, 84, 0);
+    }
+  }
+
+  @keyframes linkgo{
+    0% {
+      filter: blur(4px);
+      border: 2px solid rgb(255, 255, 255);
+    }
+  
+    50% {
+      filter: blur(2px);
+    }
+  
+    100% {
+      filter: blur(0);
+      transform:rotate(540deg) scale(.8);
+      transition-duration: .5s;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+   }
+  }
+
+  @keyframes scroll {
+     100%{
+      background-position:0px -3000px;
+    }
+  }
+  
+  @media (prefers-reduced-motion) {
+    .wrapper {
+      animation: scroll 400s linear infinite;
+    }
+  }
