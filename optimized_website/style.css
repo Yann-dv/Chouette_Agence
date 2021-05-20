@@ -8,6 +8,13 @@ body {
     color: #000000FF;
 }
 
+.text-center {
+    font-size: 12px;
+}
+
+.bold {
+    font-weight: bold;
+}
 .nav-boutton {
     color: #000000FF;
     font-weight: bold;
@@ -447,6 +454,7 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .mg-lg {
@@ -784,7 +792,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
