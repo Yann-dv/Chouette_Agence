@@ -67,7 +67,7 @@ a:hover {
 }
 
 .bloc-desc {
-    margin: auto;
+margin: auto;
 font-size: 1.5vw;
 width: 60%;
 font-weight: bold;
@@ -773,7 +773,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(53, 52, 51, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -1048,15 +1048,73 @@ h4 {
     }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 0px) and (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
     }
+    #bloc-1-hero h1 {
+        font-size: 8vw;
+        }
+        .bloc-desc {
+        font-size: 4vw;
+        width: 90%;
+        }
+        h3 {
+        font-size: 4vw;
+        }
+        p {
+        font-size: 3.5vw;
+        }
+        h2 {
+        font-size: 5vw;
+        }
+        .nav > li {
+            font-size: 4vw;
+            }
+        .black-background {
+            padding: 4px;
+        }
+        .social {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 401px) and (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
+    .bloc {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #bloc-1-hero h1 {
+        font-size: 6vw;
+        }
+        .bloc-desc {
+        font-size: 3vw;
+        width: 90%;
+        }
+        h3 {
+        font-size: 3vw;
+        }
+        p {
+        font-size: 2.5vw;
+        }
+        h2 {
+        font-size: 4vw;
+        }
+        .nav > li {
+            font-size: 3vw;
+            }
+        .black-background {
+            padding: 5px;
+        }
+        .social {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
 }
