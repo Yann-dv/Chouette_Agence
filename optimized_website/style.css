@@ -8,19 +8,13 @@ body {
     color: #000000FF;
 }
 
-.text-center {
-    font-size: 12px;
-}
-
 .bold {
     font-weight: bold;
 }
-.nav-boutton {
-    color: #000000FF;
-    font-weight: bold;
-}
-.nav-boutton:hover {
-    background-color: rgb(75, 73, 73);
+
+.center {
+    display: flex;
+    justify-content: center;
 }
 
 a,
@@ -47,7 +41,7 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
+    padding: 0 1rem;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -69,7 +63,14 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 1.5rem .5rem;
+}
+
+.bloc-desc {
+margin: auto;
+font-size: 1.5vw;
+width: 60%;
+font-weight: bold;
 }
 
 .bg-center,
@@ -300,7 +301,7 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 3.2vw;
 }
 
 .navbar {
@@ -311,7 +312,7 @@ a:hover {
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
-    font-size: 25px;
+    font-size: 2.5vw;
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
@@ -340,8 +341,10 @@ a:hover {
 
 .nav > li {
     float: left;
+    color: #000000FF;
+    font-weight: bold;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 1.3vw;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -351,6 +354,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    background-color: #F3976CFF;
 }
 
 .navbar-toggle {
@@ -454,7 +458,6 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
-    font-size: 16px;
 }
 
 .mg-lg {
@@ -676,11 +679,11 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 3.5vw;
 }
 
 .hero-bloc-text-sub {
-    font-size: 36px;
+    font-size: 3.4;
 }
 
 .statement-bloc-text {
@@ -694,7 +697,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 1.3vw;
 }
 
 .tight-width-whitespace {
@@ -703,7 +706,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 2vw;
     font-family: "Open Sans";
 }
 
@@ -722,12 +725,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 2.1vw;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 1.4vw;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -770,7 +773,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(53, 52, 51, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -1045,15 +1048,73 @@ h4 {
     }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 0px) and (max-width: 400px) {
     .bloc {
         padding-left: 0;
         padding-right: 0;
     }
+    #bloc-1-hero h1 {
+        font-size: 8vw;
+        }
+        .bloc-desc {
+        font-size: 4vw;
+        width: 90%;
+        }
+        h3 {
+        font-size: 4vw;
+        }
+        p {
+        font-size: 3.5vw;
+        }
+        h2 {
+        font-size: 5vw;
+        }
+        .nav > li {
+            font-size: 4vw;
+            }
+        .black-background {
+            padding: 4px;
+        }
+        .social {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 401px) and (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
+    .bloc {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #bloc-1-hero h1 {
+        font-size: 6vw;
+        }
+        .bloc-desc {
+        font-size: 3vw;
+        width: 90%;
+        }
+        h3 {
+        font-size: 3vw;
+        }
+        p {
+        font-size: 2.5vw;
+        }
+        h2 {
+        font-size: 4vw;
+        }
+        .nav > li {
+            font-size: 3vw;
+            }
+        .black-background {
+            padding: 5px;
+        }
+        .social {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
 }

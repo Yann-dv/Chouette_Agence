@@ -11,8 +11,16 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	
-    
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+		  'gtm.start':
+			new Date().getTime(), event: 'gtm.js'
+		}); var f = d.getElementsByTagName(s)[0],
+		  j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+			'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+	  })(window, document, 'script', 'dataLayer', 'GTM-5MP5F6K');</script>
+	<!-- End Google Tag Manager -->
 	<script src="./js/jquery-2.1.0.js"></script>
 	<script src="./js/bootstrap.js"></script>
 	<script src="./js/blocs.js"></script>
@@ -25,6 +33,10 @@
     
 </head>
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5MP5F6K" height="0" width="0"
+		style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
 <!-- Principal conteneur -->
 <div class="page-container">
     
@@ -34,18 +46,24 @@
 
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="./img/la-chouette-agence.png" alt="paris web design logo agence web meilleure agence" height="40" /></a>
+				<a class="navbar-brand" href="index.html"><img src="./img/la-chouette-agence.png" alt="Logo de la chouette agence" height="50" /></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html" class="nav-boutton">Accueil</a>
+					<li class="nav-boutton">
+						<a href="index.html" class="bold">Accueil</a>
 					</li>
-					<li>
-						<a href="contactform.html" class="nav-boutton">Nous contacter</a>
+					<li class="nav-boutton">
+						<a href="#bloc-2-services" class="bold">Nos services</a>
+					</li>
+					<li class="nav-boutton">
+						<a href="#bloc-4-portfolio" class="bold">Portfolio</a>
+					</li>
+					<li class="nav-boutton">
+						<a href="contactform.html" class="bold">Nous contacter</a>
 					</li>
 				</ul>
 			</div>
@@ -55,7 +73,7 @@
 <!-- bloc-0 END -->
 
 <!-- bloc-1-presentation -->
-<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture b-parallax" id="bloc-1-hero">
+<div class="bloc bg-banniere d-bloc bg-t-edge bloc-bg-texture b-parallax" id="bloc-1-hero">
 	<div class="container bloc-lg">
 		<div class="row tight-width-whitespace">
 			<div class="col-sm-12">
@@ -72,8 +90,8 @@
 <!-- bloc-2-services -->
 <div class="bloc bgc-white l-bloc" id="bloc-2-services">
 	<div class="container bloc-md">
-		<span class="row">La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur internet.
-		</span>
+		<h2 class="bloc-desc text-center">La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visibles sur internet.
+		</h2>
 		<div class="row voffset-lg med-width-whitespace">
 			<div class="col-sm-4">
 				<div class="text-center">
@@ -109,8 +127,8 @@
 				</p>
 			</div>
 		</div>
-		<span class="row voffset-lg voffset">"La chouette agence est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."</span>
-		<span class="row author">Maxime Guilbard, PDG de À vos fourchettes</span>
+		<span class="row voffset-lg voffset text-center">"La chouette agence est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."</span>
+		<span class="row author text-center">Maxime Guilbard, PDG de À vos fourchettes</span>
 	</div>
 </div>
 <!-- bloc-2-services END -->
@@ -135,7 +153,7 @@
 <!-- bloc-4-portfolio -->
 <div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
 	<div class="container bloc-lg">
-		<h2>
+		<h2 class="text-center">
 			Nous travaillons avec beaucoup de clients, voici nos réalisations.
 		</h2>
 		<div class="row tight-width-whitespace portfolio-row">
@@ -196,6 +214,10 @@
 	</div>
 </div>
 <!-- bloc-5-cta END -->
+
+<!-- ScrollToTop Button -->
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<!-- ScrollToTop Button END-->
 
 <!-- Footer - bloc-8 -->
 <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
