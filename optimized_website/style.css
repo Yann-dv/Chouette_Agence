@@ -5,6 +5,22 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #000000FF;
+}
+
+.text-center {
+    font-size: 12px;
+}
+
+.bold {
+    font-weight: bold;
+}
+.nav-boutton {
+    color: #000000FF;
+    font-weight: bold;
+}
+.nav-boutton:hover {
+    background-color: rgb(75, 73, 73);
 }
 
 a,
@@ -133,7 +149,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: #000000FF;
 }
 
 .d-bloc .a-btn:hover,
@@ -231,7 +247,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: #000000FF;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -249,18 +265,18 @@ a:hover {
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: #000000FF;
 }
 
 .l-bloc .navbar-toggle .icon-bar {
-    color: rgba(0, 0, 0, .6);
+    color:#000000FF;
 }
 
 .d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover,
 .l-bloc .btn-wire,
 .l-bloc .btn-wire:hover {
-    color: rgba(0, 0, 0, .7);
+    color: #000000FF;
     border-color: rgba(0, 0, 0, .3);
 }
 
@@ -438,6 +454,7 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-size: 16px;
 }
 
 .mg-lg {
@@ -651,7 +668,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000FF;
 }
 
 .container {
@@ -775,12 +792,12 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000000FF!important;
 }
 
 .btn-atomic-tangerine:hover {
@@ -809,9 +826,9 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
+/*.bg-dots-bg {
     background-image: url("img/dots-bg.png");
-}
+}*/
 
 /*.bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
