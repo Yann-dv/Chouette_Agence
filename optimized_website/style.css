@@ -6,6 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #000000FF;
+    font-family: "Quicksand", sans-serif;
 }
 
 .bold {
@@ -517,7 +518,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 48px!important;
 }
 
 .icon-lg {
@@ -694,7 +695,7 @@ p,
 label,
 .btn,
 a {
-    font-family: "helvetica";
+    font-family: "Quicksand", sans-serif;
     font-weight: 400;
     color: #000000FF;
 }
@@ -732,7 +733,7 @@ p {
 
 .h1 {
     font-size: 26px;
-    font-family: "Open Sans";
+    font-family: "Quicksand", sans-serif;
 }
 
 .cta-hero {
@@ -780,10 +781,7 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.img-responsive {
-    width: 100%;
-    height: 100%;
-}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -819,9 +817,8 @@ h4 {
     background-color: #F3976C;
 }
 
-.tc-white {
-    /*color: #FFFFFF!important;*/
-    color: #F3976C;
+.tc-main {
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
