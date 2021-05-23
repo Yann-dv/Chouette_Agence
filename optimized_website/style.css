@@ -36,7 +36,6 @@ blockquote::after {
 blockquote {
         padding: 0 2rem 0 1rem;
         margin: 5rem;
-        font-size: 2vw;
         font-style: italic;
         color: initial;
         text-align: left;
@@ -48,6 +47,7 @@ a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+    font-size :18px;
 }
 
 a:hover {
@@ -95,7 +95,6 @@ a:hover {
 
 .bloc-desc {
 margin: auto;
-font-size: 1.5vw;
 width: 60%;
 font-weight: bold;
 }
@@ -335,7 +334,7 @@ font-weight: bold;
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
-    font-size: 2.5vw;
+    font-size: 25px;
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
@@ -367,7 +366,6 @@ font-weight: bold;
     color: #000000FF;
     font-weight: bold;
     margin-top: 4px;
-    font-size: 1.3vw;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -555,7 +553,7 @@ button {
 
 .form-group label{
     border-bottom: 2px solid #F3976C;
-    font-size: 1.6vw;
+    font-size: 16px;
 }
 .scrollToTop {
     width: 40px;
@@ -706,11 +704,11 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 3.5vw;
+    font-size: 38px;
 }
 
 .hero-bloc-text-sub {
-    font-size: 3.4vw;
+    font-size: 36px;
 }
 
 .statement-bloc-text {
@@ -724,7 +722,7 @@ a {
 }
 
 p {
-    font-size: 1.4vw;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -733,7 +731,7 @@ p {
 }
 
 .h1 {
-    font-size: 2vw;
+    font-size: 26px;
     font-family: "Open Sans";
 }
 
@@ -752,12 +750,12 @@ p {
 }
 
 h2 {
-    font-size: 2.1vw;
+    font-size: 24px;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 1.4vw;
+    font-size: 22px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -861,11 +859,11 @@ h4 {
 } Suppression background pour accessibilité améliorée*/
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere2.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.jpg");
+    background-image: url("img/image-de-presentation2.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -1071,80 +1069,3 @@ h4 {
     }
 }
 
-@media (min-width: 0px) and (max-width: 400px) {
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    #bloc-1-hero h1 {
-        font-size: 8vw;
-        }
-        .bloc-desc {
-        font-size: 4vw;
-        width: 90%;
-        }
-        h3, blockquote {
-        font-size: 4vw;
-        }
-        p {
-        font-size: 3.5vw;
-        }
-        h2 {
-        font-size: 5vw;
-        }
-        .nav > li {
-            font-size: 4vw;
-            }
-        .black-background {
-            padding: 4px;
-        }
-        .social {
-            display: flex;
-            justify-content: space-evenly;
-
-        }
-}
-
-@media (min-width: 401px) and (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
-    }
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    #bloc-1-hero h1 {
-        font-size: 6vw;
-        }
-        .bloc-desc {
-        font-size: 3vw;
-        width: 90%;
-        }
-        h3, blockquote {
-        font-size: 3vw;
-        }
-        p {
-        font-size: 2.5vw;
-        }
-        h2 {
-        font-size: 4vw;
-        }
-        .nav > li {
-            font-size: 3vw;
-            }
-        .black-background {
-            padding: 5px;
-        }
-        .social {
-            display: flex;
-            justify-content: space-evenly;
-
-        }
-}
-
-@media (min-width: 1401px) {
-    .tight-width-whitespace, .container, .med-width-whitespace {
-        width: 100%;
-        max-width: 100%;
-    }
-}
