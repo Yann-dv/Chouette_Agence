@@ -9,6 +9,13 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+*:focus {
+    transform: scale(1.1);
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
 .bold {
     font-weight: bold;
 }
