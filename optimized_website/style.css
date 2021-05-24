@@ -1100,3 +1100,8 @@ h4 {
     }
 }
 
+@media (width <= 425) {    
+    .bg-banniere {
+        background-image: url("img/la-chouette-agence-bannieresmall.jpg");
+    }
+}
