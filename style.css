@@ -39,6 +39,16 @@ a {
     margin-top: 2rem;
 }
 
+.link__logo {
+  display: flex;
+  position: relative;
+  filter: blur(0);
+  top: 25%;
+  left: 25%;
+  width: 3vw;
+  height: 3vw;
+}
+
 .bubble {
     display: flex;
     align-items: center;
@@ -48,12 +58,12 @@ a {
 .bubble__link {
     background: linear-gradient(0deg, rgba(10, 26, 247, 0.9) 0%, rgba(73, 9, 110, 0.9) 100%);
     box-shadow: 0 0 0 0 rgba(142, 17, 158);
-    border: 2px solid rgb(255, 255, 255);
-    filter: blur(4px);
+    border: .10rem solid rgb(255, 255, 255);
+    position: relative;
     border-radius: 5rem;
-    height: 3rem;
-    width: 3rem;
-    color: transparent;
+    height: 6vw;
+    width: 6vw;
+    filter:blur(0);
 }
 
 .bubble__link:hover {
@@ -96,21 +106,33 @@ a {
 
   @keyframes linkgo{
     0% {
-      filter: blur(4px);
+      filter: blur(0);
       border: 2px solid rgb(255, 255, 255);
     }
   
     50% {
-      filter: blur(2px);
+      filter: blur(1px);
     }
   
     100% {
-      filter: blur(0);
-      transform:rotate(540deg) scale(.8);
+      filter: blur(3px);
+      transform:rotate(360deg) scale(.8);
       transition-duration: .5s;
       border: 1px solid rgba(255, 255, 255, 0.5);
    }
   }
+
+@keyframes linklogo {
+  0% {
+    filter: blur(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    filter: blur(0);
+    transform: rotate(0);
+  }
+}
 
   @keyframes scroll {
      100%{
@@ -118,8 +140,22 @@ a {
     }
   }
   
-  @media (prefers-reduced-motion) {
+  @media only screen and (min-width: 0px)and (max-width: 1020px) {
+    .title {
+      font-size: 12vw;
+    }
+    body {
+      font-size : 5vw;
+    }
+    .bubble__link {
+      height: 15vw;
+      width: 15vw;
+    }
+    .link__logo {
+      height: 8vw;
+      width: 8vw;
+    }
     .wrapper {
       animation: scroll 400s linear infinite;
     }
-  }
+}
