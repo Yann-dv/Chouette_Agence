@@ -22,7 +22,7 @@ body {
 
 .maintitle {
     border-radius: 2rem;
-    background-color: rgba(53, 52, 51, 0.7);
+    background-color: rgba(22, 22, 22, 0.904);
     padding: 1.5rem;
 }
 
@@ -803,7 +803,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(53, 52, 51, 0.7);
+    background-color: rgba(22, 22, 22, 0.904);
     padding: 2.5rem 2.5rem 2.5rem 2.5rem;
 }
 
