@@ -9,7 +9,8 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
-*:focus {
+
+*:focus:not(.form-control) {
     transform: scale(1.1);
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
